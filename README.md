@@ -1,65 +1,25 @@
-<div align="center">
-  <a href="https://beauty.now.sh ">
-        <img width="200" heigth="200" src="https://olxvlcccu.qnssl.com/blog/1b1yv.png?imageslim">
-  </a>
-  <h1>Beauty</h1>
-  <p>  
-      这是一个 VUE + VUEX + FIREBASE + BULMA … 实现的 SPA SSR项目  <br/>
-      <a href="https://beauty.now.sh " target="__blank" > live demo</a>
-  <p>
-</div>
+## [渣前端一枚](SuperJ)
 
-<h2 align="center">WHY</h2> 
+> **博客签名：若批评无自由，则赞美无意义。**
 
-> VUE SSR的相关资料不多, 最全面的demo就是官方的 [vue-hackernews-2.0](https://github.com/vuejs/vue-hackernews-2.0) . 因为各种版本的 hackernews clone 看的太多了,也有点审美疲劳 . 所以有了 [beauty-enjoy/beauty](https://github.com/beauty-enjoy/beauty) 这个Repo
+> **博客宗旨：从现象看本质，再从本质回归到现象。**
 
-<h2 align="center">DO</h2>
+> **博客目的：自省证道**
 
-* 先从 [dbmeinv.com](http://dbmeinv.com) 上爬取了数据源,分类存储到firebase中 , 并且保持实时更新 这部分repo是[beauty-enjoy/dbmeinv-firebase-api](https://github.com/beauty-enjoy/dbmeinv-firebase-api)
-* 然后参考了现有的一些ssr项目 , 利用 [beauty-enjoy/dbmeinv-firebase-api](https://github.com/beauty-enjoy/dbmeinv-firebase-api) 完成了[beauty-enjoy/beauty](https://github.com/beauty-enjoy/beauty) 这个Repo
-  
-<h2 align="center">Preview</h2>
+> **博客主人：Too young,too simple.Sometimes,naive & stupid.**
+               
+> **博客座右铭：生活不止裆下的苟且，还有看不到的bug和读不懂的code。**
 
-![](https://olxvlcccu.qnssl.com/blog/y96bi.jpg?imageslim)
+## 2017
+**行远自迩，登高自卑，与君共勉。文以载道，歌以咏志。** 
 
-<h2 align="center">Develop </h2>
+### **[奇文共欣赏，疑义相与析。](https://github.com/jawil/blog/issues/6)(持续更新)**
 
-```sh
-# local develop
-npm run dev
-# build for production 
-npm run build
-# production server 
-npm run start
-```
+### December
+*-服务器渲染 -node -egg -koa*
+* December 10, 2017 **»** [vue-ssr-init](https://github.com/MrSuperJ/arms/tree/vue-ssr-init)
 
-<h2 align="center">Related Repo </h2>
 
-* Data: [dbmeinv-firebase-api](https://github.com/beauty-enjoy/dbmeinv-firebase-api) [firebase server](https://firebase.google.com/docs/server/setup)
-* JS: [vue](https://github.com/vuejs/vue) [vuex](https://github.com/vuejs/vuex)
-* UI: [bulma](https://github.com/jgthms/bulma)
-* SERVER: [now.sh](https://now.sh)
-* [Other Excellent library](https://github.com/beauty-enjoy/beauty/blob/master/package.json) 
 
-<h2 align="center">TODO </h2>
-
-- [x] upgrade to SSR
-- [ ] add cache for api
-- [ ] list all girls page
-- [ ] list all location page
-- [ ] add commit to posts
-
-<h2 align="center">Core Team</h2>
-
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top">
-        <img width="150" height="150" src="https://github.com/netpi.png?s=150">
-        <br>
-        <a href="https://github.com/netpi">Netpi Chen</a>        
-        <p>Founder for this repo</p>
-      </td>      
-     </tr>
-  </tbody>
-</table>
+**码梦为生，笔耕不辍。** 
+**博客布局来自jawil,天资愚钝，有心自设，暂用，侵删** 
