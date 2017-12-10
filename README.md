@@ -1,17 +1,16 @@
 <div align="center">
-  <a href="https://beauty.now.sh ">
-        <img width="200" heigth="200" src="https://olxvlcccu.qnssl.com/blog/1b1yv.png?imageslim">
-  </a>
   <h1>Beauty</h1>
   <p>  
-      这是一个 VUE + VUEX + FIREBASE + BULMA … 实现的 SPA SSR项目  <br/>
+      这是一个参照Beauty稍作修改的项目， 以VUE + VUEX  + BULMA … 实现, 删除了fireBase,帮助像我一类的新手在国内依然可以流畅打开vue-ssr项目进行学习。 <br/>
       <a href="https://beauty.now.sh " target="__blank" > live demo</a>
   <p>
 </div>
 
 <h2 align="center">WHY</h2> 
 
-> VUE SSR的相关资料不多, 最全面的demo就是官方的 [vue-hackernews-2.0](https://github.com/vuejs/vue-hackernews-2.0) . 因为各种版本的 hackernews clone 看的太多了,也有点审美疲劳 . 所以有了 [beauty-enjoy/beauty](https://github.com/beauty-enjoy/beauty) 这个Repo
+> [beauty-enjoy/beauty](https://github.com/beauty-enjoy/beauty) 
+>  VUE SSR的相关资料不多, 最全面的demo就是官方的 [vue-hackernews-2.0](https://github.com/vuejs/vue-hackernews-2.0) . 因为各种版本的 hackernews clone 看的太多了,也有点审美疲劳 
+
 
 <h2 align="center">DO</h2>
 
