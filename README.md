@@ -1,25 +1,14 @@
-## [渣前端一枚](SuperJ)
+## [封装一个Vue的下拉选框](SuperJ)
 
-> **博客签名：若批评无自由，则赞美无意义。**
+> **浏览器中自带的select选框样式比较老式，无法满足需求**
 
-> **博客宗旨：从现象看本质，再从本质回归到现象。**
+> **虽然css可以对select进行样式优化，但是局限性很强，很多属性不能使用，很多地方触及不到**
 
-> **博客目的：自省证道**
-
-> **博客主人：Too young,too simple.Sometimes,naive & stupid.**
-               
-> **博客座右铭：生活不止裆下的苟且，还有看不到的bug和读不懂的code。**
-
-## 2017
-**行远自迩，登高自卑，与君共勉。文以载道，歌以咏志。** 
-
-### **[奇文共欣赏，疑义相与析。](https://github.com/jawil/blog/issues/6)(持续更新)**
-
-### December
-*-服务器渲染 -node -egg -koa*
-* December 10, 2017 **»** [vue-ssr-init](https://github.com/MrSuperJ/arms/tree/vue-ssr-init)
+> **知识涉及：js事件冒泡、vue父子组件通讯、css阴影效果**
 
 
+## 运行
+* vue-select 是封装好的组件
 
-**码梦为生，笔耕不辍。** 
-**博客布局来自jawil,天资愚钝，有心自设，暂用，侵删** 
+
+**码梦为生，笔耕不辍。**

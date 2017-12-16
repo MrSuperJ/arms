@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue封装一个select组件</title>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://cdn.bootcss.com/require.js/2.3.5/require.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <style media="screen">
+        .price{
+          width:100px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <li>我选中了：{{value.value}}</li>
+      <test-select class="price" v-model="value" :options="options"></test-select>
+    </div>
+
+    <script type="text/javascript">
+      require(['./vue-select.js'],function(){
+        var app = new Vue({
+            el: '#app',
+            data: {
+               value:{
+                   text:"￥40/人",
+                   value:40
+               },
+               options:[
+                   {value:0,text:'不需要'},
+                   {value:40,text:'￥40/人'},
+                   {value:50,text:'￥50/人'},
+                   {value:60,text:'￥60/人'},
+               ]
+            }
+         })
+      })
+
+    </script>
+  </body>
+</html>
