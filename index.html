@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>点评</title>
+		<meta content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=yes" name="format-detection" />
+		<!--link-->
+		<link type="text/css" rel="stylesheet" href="./css/style.css"  />
+		<link type="text/css" rel="stylesheet" href="./css/detail_b.css"  />
+		<link type="text/css" rel="stylesheet" href="./css/font-awesome.css"  />
+		<script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="./js/rem.js"></script>
+		<script type="text/javascript" src="./js/evaluate.js"></script>
+		<!--<script type="text/javascript" src="../js/style.js"></script>-->
+	</head>
+	<style>
+		.box,.box2,.box3{
+			display: inline-block;
+            width:.8rem;
+            height:.8rem;
+            margin-left:5px;
+            background:url(./images/xing.png) no-repeat center;
+            border-radius:50%;
+        }
+        .coma span,.comb span,.comc span{
+        	display: inline-block;
+        	font-size: .36rem;
+        	color: #333;
+        	line-height: .8rem;
+        	float: left;
+        }
+        .coma,.comb,.comc{
+        	width: 90%;
+        	height: .8rem;
+        	margin: 0 auto;
+        }
+		.active{
+			background: url(./images/xing_color.png) no-repeat center !important;
+		}
+	</style>
+	<body>
+		<div class="inner_top cen_box">
+			<a href="#" onclick="history.back(-1)"><img src="./images/back.png" class="backnav"></a>
+			点评
+			<div class="righticon">
+				<a ><img src="./images/indexcon.png" class="img2"/></a>
+			</div>
+		</div>
+		<div class="mycom">
+			<div class="fgline3"></div>
+			<div class="com_name"><img src="./images/spic1.jpg"/><span>四川麻辣火锅</span></div>
+			<div class="like">
+				<span></span>
+			</div>
+			<div class="mark_star mark_pj mark_star2">
+				<div class="mark_star_m">
+					<span class="star eval_star star2">
+					  	<b class="gray"></b>
+                        <b class="gray"></b>
+                        <b class="gray"></b>
+                        <b class="gray"></b>
+                        <b class="gray"></b>
+                    </span>
+                    <input type="hidden" name="quality_point" value="4" class="evaluate">
+				</div>
+        	</div>
+        	<div class="fgline3"></div>
+        	<p>请输入至少8个字的评价:</p>
+        	<div class="ccc"><textarea placeholder="菜品如何，对服务还满意吗？" class="comtxt"></textarea></div>
+        	<!--综合评价-->
+        	<div class="coma clearfix" id='Flavor'>
+        	</div>
+        	<div class="comb" id="Environ">
+        	</div>
+        	<div class="comc" id="Service">
+        	</div>
+        	<div id="res">
+        	</div>
+
+
+        	<!---->
+        	<div class="ccc"><a href="#" class="cancle_btn">提交</a></div>
+		</div>
+	</body>
+</html>
+ <script>
+		var starCommit =function($box,title,star){
+			var obj={
+			   star:star||5, // 如果不填默认渲染5颗星星
+			   title:title,
+			   count:0,
+			   set count(x){
+				   this.$content.find('.box').each(function(){
+					  if($(this).attr('attr-level')<x+1) {
+						  $(this).addClass('active')
+					  }
+					  else{
+						  $(this).removeClass('active')
+					  }
+					  // 分数需要在这里重新渲染
+				   })
+			   },
+			   $content:$box,
+			   // 初始化
+			   init:function(){
+				   this.draw();
+				   this.bind();
+			   },
+			   // 渲染dom
+			   draw:function(){
+				   var $box=this.$content,
+						title=this.title,
+						star =this.star;
+				   // 标题   不带标题参数就不渲染标题
+				   if(title){
+					$box.append("<span>"+title+"</span>");
+				   }
+				   // 星星
+				   for(i=0;i<star;i++){
+					   $box.append("<span class='box' attr-level='"+(i+1)+"'></span>")
+				   }
+
+			   },
+			   // 绑定方法
+			   bind:function(){
+				var self =this
+				this.$content.find('.box').on("click",function(){
+					self.count=$(this).attr('attr-level')
+					// 这里需要删掉 你按照设计稿添加分数
+					$('#res').html($(this).attr('attr-level'))
+				}) ;
+			   }
+			}
+			obj.init();
+		}
+		var flavor=new starCommit($('#Flavor'),"口味")
+		var environ=new starCommit($('#Environ'),"环境");
+		var service=new starCommit($('#Service'),"服务");
+    </script>
