@@ -37,9 +37,15 @@
         	width: 90%;
         	height: .8rem;
         	margin: 0 auto;
+					position: relative;
         }
 		.active{
 			background: url(./images/xing_color.png) no-repeat center !important;
+		}
+		.score{
+			position: absolute;
+			right: 20px;
+			font-size: 28px;
 		}
 	</style>
 	<body>
@@ -123,16 +129,18 @@
 				   for(i=0;i<star;i++){
 					   $box.append("<span class='box' attr-level='"+(i+1)+"'></span>")
 				   }
+					 $box.append("<i class='score'></i>")
 
 			   },
 			   // 绑定方法
 			   bind:function(){
-				var self =this
-				this.$content.find('.box').on("click",function(){
-					self.count=$(this).attr('attr-level')
-					// 这里需要删掉 你按照设计稿添加分数
-					$('#res').html($(this).attr('attr-level'))
-				}) ;
+						var self =this
+						var $score=this.$content.find(".score")
+						this.$content.find('.box').on("click",function(){
+							self.count=$(this).attr('attr-level')
+							// 这里需要删掉 你按照设计稿添加分数
+							$score.html($(this).attr('attr-level'))
+						}) ;
 			   }
 			}
 			obj.init();
