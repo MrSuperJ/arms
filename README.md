@@ -26,5 +26,8 @@
 *-js实现手机原生扫码界面  -JS -仿原生扫码*
 * March 14, 2018 **»** [MarkDown](https://github.com/MrSuperJ/arms/issues/1)
 
+### April
+*-移动端滚动穿透问题完美解决方案 -JS -H5、微信滚动*
+* April 28, 2018 **»** [MarkDown](https://segmentfault.com/a/1190000005617307?from=singlemessage&isappinstalled=0)
 **码梦为生，笔耕不辍。**
 **博客布局来自jawil,天资愚钝，有心自设，暂用，侵删**
