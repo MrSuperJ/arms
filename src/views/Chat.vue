@@ -1,5 +1,5 @@
 <template>
     <div>
-        Yes, I took with Jack Ma today!
+        Yes, I talked with Jack Ma today!
     </div>
 </template>
